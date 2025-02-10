@@ -1,0 +1,63 @@
+{
+	"info": {
+		"_postman_id": "4a3a9e55-8118-42b0-aeed-024acf50bf52",
+		"name": "couriertracking",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "8045431"
+	},
+	"item": [
+		{
+			"name": "getTotalDistance",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/couriers/courier/123/total-distance",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"couriers",
+						"courier",
+						"123",
+						"total-distance"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateCourierLocation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"courierId\": \"123\",\n    \"latitude\": 41.056500,\n    \"longitude\": 29.021500,\n    \"time\": \"2025-02-08T10:30:00\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/couriers/update-courier-location",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"couriers",
+						"update-courier-location"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
